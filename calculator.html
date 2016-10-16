@@ -1,0 +1,29 @@
+<Html>
+<Head>
+<script language="javascript">
+function calculate()
+{
+var a=parseInt(document.getElementById("a1").value);
+var b=parseInt(document.getElementById("a2").value);
+if(a>=b)
+{
+var c=a+b;
+ document.getElementById("a3").value=c;
+}
+else
+ {var d=b-a;
+ document.getElementById("a4").value=d;
+}
+}
+</script>
+</Head>
+<body>
+<form>
+A=<input type="text" id="a1"><br>
+B=<input type="text" id="a2"><br>
+sum=<input id="a3"> <br>
+sub=<input id="a4"> <br>
+<input type="Button" value="calculator"onclick="calculate()">
+</form>
+</body>
+</Html>
